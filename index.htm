@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="dns-prefetch" href="//maps.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link type="text/css" rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="modernizr.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <title>Quality Shelters</title>
+    <link href="Content/css?v=o8dgUIIVU8J0eyWRjxHpQWu3bSc5tcPk74hBsBYEe9I1" rel="stylesheet">
+
+    <link href="/Content/fontawesome.css" rel="stylesheet">
+    <script src="bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">
+                    <img src="logo-name.png" class="img-responsive">
+                </a>
+            </div>
+            <div class="navbar-collapse collapse trans">
+                <ul class="nav navbar-nav trans">
+                    <li>
+                        <a href="index.htm">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about-us.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contruction.html">
+                            Construction
+                        </a>
+                    </li>
+                    <li>
+                        <a href="interior-design.html">
+                            Interior Design
+                        </a>
+                    </li>
+                    <li>
+                        <a href="architecture.html">
+                            Architecture
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Home/Contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Joint Venture
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="bundles/jquery?v=8Oos0avDZyPg-cbyVzvkIfERIE1DGSe3sRQdCSYrgEQ1"></script>
+
+    <script src="bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+    
+    <div class="container-fluid">
+        
+ 
+<div id="row" class="row dropdown hide-h">
+    <div class="col-xs-4 col"></div>
+    <div class="col-xs-4 col">
+        <div class="logo">
+            <div class="dropdown-menu profile-min trans">
+                <div class="dotted"></div>
+                <p>Lorem ipsum dolor sit amet. Turel upn gravida nibh vel velit auctor aliquet aen sollic conseut ipsutis. Lorem ipsum dolor sit amet.</p>
+                <a href="about-us.html" class="btn btn-block">About Us</a>
+            </div>
+            <a class="mind mind-top" title="Architecture">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="trans flip-top"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </a>
+            <a class="mind mind-left" title="Construction">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="trans flip-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </a>
+            <a class="mind mind-right" title="Interior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="trans flip-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+            <div class="perspective" id="perspective">
+                <div class="cube">
+                    <div class="tab-content">
+                        <img src="gal/contruction-1.png" class="img-responsive col-xs-12 pull-left body-content">
+                    </div>
+                    <div class="tab-content">
+                        <img src="logo.png" class="img-responsive col-xs-12 pull-left body-content" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                    </div>
+                    <div class="tab-content">
+                        <img src="2-con-temp.png" class="img-responsive col-xs-12 pull-left body-content">
+                    </div>
+                    <div class="tab-content">
+                        <img src="3-con-temp.png" class="img-responsive col-xs-12 pull-left body-content">
+                    </div>
+                </div>
+                <div class="cube-name">
+                    <img src="logo-name.png" class="img-responsive">
+                </div>
+            </div>
+            <style>
+                .perspective {
+                    perspective: 76em;
+                    perspective-origin: 50% 20px;
+                    width: calc(100% - 100px);
+                    margin: 0 auto;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 100;
+                    color: #fff;
+                    text-align: center;
+                    position: relative;
+                    z-index: 9;
+                }
+
+                input {
+                    display: none;
+                }
+
+                .cube {
+                    position: relative;
+                    margin: 0 0;
+                    width: 100%;
+                    height: 100%;
+                    transform-style: preserve-3d;
+                    background: #fff;
+                    transition: transform 0.5s ease-in;
+                    z-index: 99;
+                }
+
+                .tab-content {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    overflow: hidden;
+                    z-index: 1;
+                    z-index: 99;
+                }
+
+                    .tab-content h1 {
+                        font-size: 25px;
+                        margin: 75px 0 10px;
+                        font-weight: 300;
+                    }
+
+                    .tab-content p {
+                        font-size: 12px;
+                    }
+
+                    .tab-content:nth-child(2) {
+                        transform: translateZ(365px);
+                        background: #fff;
+                    }
+
+                    .tab-content:nth-child(1) {
+                        transform-origin: left bottom;
+                        background: #fff;
+                    }
+                    .tab-content:nth-child(3) {
+                        transform-origin: top left; 
+                        background: #fff;
+                    }
+                    .tab-content:nth-child(4) {
+                        transform-origin: right bottom;
+                        background: #fff;
+                    }
+
+                .cubes-s {
+                    transform: rotateY(90deg) !important;
+                }
+
+                .cubes {
+                    transform: rotateY(30deg);
+                }
+                .cubes-top {
+                    transform: rotateX(-30deg);
+                }
+                .cubes-tops {
+                    transform: rotateX(-90deg) !important;
+                }
+                .cubes-right {
+                    transform: rotateY(-30deg);
+                }
+                .cubes-rights {
+                    transform: rotateY(-90deg) !important;
+                }
+            </style>
+        </div>
+    </div>
+</div>
+<div class="col-xs-4 col"></div>
+    <div class="videos">
+        <video id="myVideo" class="video-fluid" autoplay="autoplay" muted="muted" width="100%">
+            <source src="log.mp4" type="video/mp4">
+        </video>
+    </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".flip-left").hover(
+            function () {
+                $(".cube").addClass("cubes");
+                setTimeout(function () { $(".cube").removeClass("cubes"); }, 500);
+            },
+            function () {
+                $(".cube").removeClass("cubes");
+            });
+
+        $(".flip-top").hover(
+            function () {
+                $(".cube").addClass("cubes-top");
+                setTimeout(function () { $(".cube").removeClass("cubes-top"); }, 500);
+            },
+            function () {
+                $(".cube").removeClass("cubes-top");
+            });
+
+        $(".flip-right").hover(
+            function () {
+                $(".cube").addClass("cubes-right");
+                setTimeout(function () { $(".cube").removeClass("cubes-right"); }, 500);
+            },
+            function () {
+                $(".cube").removeClass("cubes-right");
+            });
+    });
+    $(document).ready(function () {
+        $(".flip-left").click(
+            function () {
+                $(".cube").addClass("cubes-s");
+                setTimeout(function () { window.location.replace("contruction.html"); }, 1000);
+            });
+
+        $(".flip-top").click(
+            function () {
+                $(".cube").addClass("flip-tops");
+                setTimeout(function () { window.location.replace("Architecture.html"); }, 1000);
+            });
+
+        $(".flip-right").click(
+            function () {
+                $(".cube").addClass("flip-rights");
+                setTimeout(function () { window.location.replace("Interior.html"); }, 1000);
+            });
+    });
+</script>
+<script type='text/javascript'>
+    $(document).ready(function () {
+        var img = document.getElementById('perspective');
+        var body = document.getElementById('row');
+        //or however you get a handle to the IMG
+        var width = img.clientWidth;
+        var height = img.clientHeight + 'px';
+
+        var widths = width / 2;
+        var row = body.clientWidth * 66.7 / 100;
+
+        $(".cube").attr("style", "height:" + width + 'px;');
+
+        var ss = "transform:translateZ(" + widths + "px)";
+        var s = "transform: rotateY(270deg) translateX(-" + widths + "px)";
+        var s3 = "transform: rotateX(-270deg) translateY(-" + widths + "px)";
+        var s4 = "transform: rotateY(-270deg) translateX(" + widths + "px)";
+
+        //$(".profile-min").attr("style", "left:" + row + "px");
+        $(".tab-content:nth-child(1)").attr("style", s);
+        $(".tab-content:nth-child(2)").attr("style", ss);
+        $(".tab-content:nth-child(3)").attr("style", s3);
+        $(".tab-content:nth-child(4)").attr("style", s4);
+
+        var vid = document.getElementById("myVideo");
+        vid.onended = function () {
+            $(".videos").attr("class", "hides trans");
+            $(".row").removeClass("hide-h");
+        };
+    });
+
+    window.addEventListener('resize', function (event) {
+        var img = document.getElementById('perspective');
+        //or however you get a handle to the IMG
+        var width = img.clientWidth;
+        var height = img.clientHeight + 'px';
+
+        var widths = width / 2;
+
+        var ss = "transform:translateZ(" + widths + "px)";
+        var s = "transform: rotateY(270deg) translateX(-" + widths + "px)";
+
+        $(".cube").attr("style", "height:" + width + 'px;');
+
+        $(".tab-content:nth-child(1)").attr("style", s);
+        $(".tab-content:nth-child(2)").attr("style", ss);
+    }, true);
+</script>
+<style>
+    .navbar-inverse{
+        display:none;
+    }
+</style>
+    </div>
+    <div class="clearfix"></div>
+    <div class="footer navbar-fixed-bottom">
+
+    </div>
+    <div class="clearfix"></div>
+    <footer class="navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 pull-left">
+                    <img src="logo-name.png" class="img-responsive logo1">
+                    <div class="clearfix"></div>
+                    <p>Lorem ipsum dolor sit amet. Turel upn gravida nibh vel velit auctor aliquet aen sollic conseut ipsutis. Lorem ipsum dolor sit amet. </p>
+                </div>
+                <div class="col-xs-12 col-sm-3 pull-left">
+                    <h2>QUICK LINKS</h2>
+                    <div class="clearfix"></div>
+                    <ul class="list-unstyled">
+                        <li><a>Home 1</a></li>
+                        <li><a>Home 2</a></li>
+                        <li><a>Home 3</a></li>
+                        <li><a>Home 4</a></li>
+                        <li><a>Home 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 pull-left">
+                    <h2>SOCIAL NETWORKS</h2>
+                    <div class="clearfix"></div>
+                    <ul class="list-unstyled">
+                        <li><a><img src="svg/facebook.svg">Home 1</a></li>
+                        <li><a><img src="svg/instagram.svg">Home 2</a></li>
+                        <li><a><img src="svg/google.svg">Home 3</a></li>
+                        <li><a><img src="svg/youtube.svg">Home 4</a></li>
+                        <li><a><img src="svg/linkedin.svg">Home 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 pull-left">
+                    <h2>CONTACT US</h2>
+                    <div class="clearfix"></div>
+                    <ul class="list-unstyled">
+                        <li><a><img src="svg/phone.svg">Home 1</a></li>
+                        <li><a><img src="svg/envelope.svg">Home 2</a></li>
+                        <li><p>Lorem ipsum dolor sit amet. Turel upn gravida nibh vel velit auctor aliquet aen sollic </p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="clearfix"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".dropdown").hover(function () {
+                var dropdownMenu =
+                    $(this).children(".dropdown-menu");
+                if (dropdownMenu.is(":visible")) {
+                    $(this).toggleClass("open");
+                }
+                else {
+                    $(this).toggleClass("open");
+                }
+            });
+
+            $(".footer").hover(
+                function () {
+                    $("footer").addClass("foot");
+                    $(".container-fluid").addClass("foots");
+                },
+                function () {
+                    $("footer").removeClass("foot");
+                    $(".container-fluid").removeClass("foots");
+                });
+            $("footer").hover(
+                function () {
+                    $("footer").addClass("foot");
+                    $(".container-fluid").addClass("foots");
+                },
+                function () {
+                    $("footer").removeClass("foot");
+                    $(".container-fluid").removeClass("foots");
+                });
+        });
+    </script>
+</body>
+</html>
