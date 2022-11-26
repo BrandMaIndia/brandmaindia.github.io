@@ -187,16 +187,16 @@
                 }
 
                 .cubes {
-                    transform: rotateY(30deg);
+                    transform: rotateY(90deg);
                 }
                 .cubes-top {
-                    transform: rotateX(-30deg);
+                    transform: rotateX(-90deg);
                 }
                 .cubes-tops {
                     transform: rotateX(-90deg) !important;
                 }
                 .cubes-right {
-                    transform: rotateY(-30deg);
+                    transform: rotateY(-90deg);
                 }
                 .cubes-rights {
                     transform: rotateY(-90deg) !important;
@@ -211,55 +211,55 @@
             <source src="log.mp4" type="video/mp4">
         </video>
     </div>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".flip-left").hover(
-            function () {
-                $(".cube").addClass("cubes");
-                setTimeout(function () { $(".cube").removeClass("cubes"); }, 500);
-            },
-            function () {
-                $(".cube").removeClass("cubes");
-            });
-
-        $(".flip-top").hover(
-            function () {
-                $(".cube").addClass("cubes-top");
-                setTimeout(function () { $(".cube").removeClass("cubes-top"); }, 500);
-            },
-            function () {
-                $(".cube").removeClass("cubes-top");
-            });
-
-        $(".flip-right").hover(
-            function () {
-                $(".cube").addClass("cubes-right");
-                setTimeout(function () { $(".cube").removeClass("cubes-right"); }, 500);
-            },
-            function () {
-                $(".cube").removeClass("cubes-right");
-            });
-    });
-    $(document).ready(function () {
-        $(".flip-left").click(
-            function () {
-                $(".cube").addClass("cubes-s");
-                setTimeout(function () { window.location.replace("contruction.html"); }, 1000);
-            });
-
-        $(".flip-top").click(
-            function () {
-                $(".cube").addClass("flip-tops");
-                setTimeout(function () { window.location.replace("Architecture.html"); }, 1000);
-            });
-
-        $(".flip-right").click(
-            function () {
-                $(".cube").addClass("flip-rights");
-                setTimeout(function () { window.location.replace("Interior.html"); }, 1000);
-            });
-    });
-</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".flip-left").hover(
+                function () {
+                    $(".cube").addClass("cubes");
+                    //setTimeout(function () { $(".cube").removeClass("cubes"); }, 500);
+                },
+                function () {
+                    $(".cube").removeClass("cubes");
+                });
+    
+            $(".flip-top").hover(
+                function () {
+                    $(".cube").addClass("cubes-top");
+                    //setTimeout(function () { $(".cube").removeClass("cubes-top"); }, 500);
+                },
+                function () {
+                    $(".cube").removeClass("cubes-top");
+                });
+    
+            $(".flip-right").hover(
+                function () {
+                    $(".cube").addClass("cubes-right");
+                    //setTimeout(function () { $(".cube").removeClass("cubes-right"); }, 500);
+                },
+                function () {
+                    $(".cube").removeClass("cubes-right");
+                });
+        });
+        $(document).ready(function () {
+            $(".flip-left").click(
+                function () {
+                    $(".cube").addClass("cubes-s");
+                    setTimeout(function () { window.location.replace("contruction.html"); }, 1000);
+                });
+    
+            $(".flip-top").click(
+                function () {
+                    $(".cube").addClass("flip-tops");
+                    setTimeout(function () { window.location.replace("Architecture.html"); }, 1000);
+                });
+    
+            $(".flip-right").click(
+                function () {
+                    $(".cube").addClass("flip-rights");
+                    setTimeout(function () { window.location.replace("Interior.html"); }, 1000);
+                });
+        });
+    </script>
 <script type='text/javascript'>
     $(document).ready(function () {
         var img = document.getElementById('perspective');
