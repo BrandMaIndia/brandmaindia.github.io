@@ -15,6 +15,168 @@
     <link href="/Content/fontawesome.css" rel="stylesheet">
     <script src="bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"></script>
+  <style>
+      .carousel{position:relative}.carousel-inner{position:relative;width:100%;overflow:hidden}.carousel-item{position:relative;display:none;-ms-flex-align:center;align-items:center;width:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:1000px;perspective:1000px}.carousel-item-next,.carousel-item-prev,.carousel-item.active{display:block;transition:-webkit-transform .6s ease;transition:transform .6s ease;transition:transform .6s ease,-webkit-transform .6s ease}@media screen and (prefers-reduced-motion:reduce){.carousel-item-next,.carousel-item-prev,.carousel-item.active{transition:none}}.carousel-item-next,.carousel-item-prev{position:absolute;top:0}.carousel-item-next.carousel-item-left,.carousel-item-prev.carousel-item-right{-webkit-transform:translateX(0);transform:translateX(0)}@supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)){.carousel-item-next.carousel-item-left,.carousel-item-prev.carousel-item-right{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.active.carousel-item-right,.carousel-item-next{-webkit-transform:translateX(100%);transform:translateX(100%)}@supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)){.active.carousel-item-right,.carousel-item-next{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.active.carousel-item-left,.carousel-item-prev{-webkit-transform:translateX(-100%);transform:translateX(-100%)}@supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)){.active.carousel-item-left,.carousel-item-prev{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}.carousel-fade .carousel-item{opacity:0;transition-duration:.6s;transition-property:opacity}.carousel-fade .carousel-item-next.carousel-item-left,.carousel-fade .carousel-item-prev.carousel-item-right,.carousel-fade .carousel-item.active{opacity:1}.carousel-fade .active.carousel-item-left,.carousel-fade .active.carousel-item-right{opacity:0}.carousel-fade .active.carousel-item-left,.carousel-fade .active.carousel-item-prev,.carousel-fade .carousel-item-next,.carousel-fade .carousel-item-prev,.carousel-fade .carousel-item.active{-webkit-transform:translateX(0);transform:translateX(0)}@supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)){.carousel-fade .active.carousel-item-left,.carousel-fade .active.carousel-item-prev,.carousel-fade .carousel-item-next,.carousel-fade .carousel-item-prev,.carousel-fade .carousel-item.active{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.carousel-control-next,.carousel-control-prev{position:absolute;top:0;bottom:0;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:15%;color:#fff;text-align:center;opacity:.5}.carousel-control-next:focus,.carousel-control-next:hover,.carousel-control-prev:focus,.carousel-control-prev:hover{color:#fff;text-decoration:none;outline:0;opacity:.9}.carousel-control-prev{left:0}.carousel-control-next{right:0}.carousel-control-next-icon,.carousel-control-prev-icon{display:inline-block;width:20px;height:20px;background:transparent no-repeat center center;background-size:100% 100%}.carousel-control-prev-icon{background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")}.carousel-control-next-icon{background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")}.carousel-indicators{position:absolute;right:0;bottom:10px;left:0;z-index:15;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;padding-left:0;margin-right:15%;margin-left:15%;list-style:none}.carousel-indicators li{position:relative;-ms-flex:0 1 auto;flex:0 1 auto;width:30px;height:3px;margin-right:3px;margin-left:3px;text-indent:-999px;cursor:pointer;background-color:rgba(255,255,255,.5)}.carousel-indicators li::before{position:absolute;top:-10px;left:0;display:inline-block;width:100%;height:10px;content:""}.carousel-indicators li::after{position:absolute;bottom:-10px;left:0;display:inline-block;width:100%;height:10px;content:""}.carousel-indicators .active{background-color:#fff}.carousel-caption{position:absolute;right:15%;bottom:20px;left:15%;z-index:10;padding-top:20px;padding-bottom:20px;color:#fff;text-align:center}
+      
+  </style>
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+      <style>
+          .row{
+              display: flex !important;
+          }
+  
+  .carousel {
+      position: relative;
+  }
+
+   .carousel-item img {
+      object-fit: cover;
+      width: 100%!important;
+  }
+  
+
+  #carousel-thumbs {
+      background: #f0f0f0;
+      padding: 0 50px;
+  }
+        #carousel-thumbs2 {
+            background: #f0f0f0;
+            padding: 0 50px;
+         }
+                #carousel-thumbs3 {
+                 background: #f0f0f0;
+                  padding: 0 50px;
+              }
+                         #carousel-thumbs4 {
+                           background: #f0f0f0;
+                          padding: 0 50px;
+                      }
+  
+
+  #carousel-thumbs img:hover {
+      opacity: 100%;
+  }
+
+        #carousel-thumbs2 img:hover {
+              opacity: 100%;
+         }
+               #carousel-thumbs3 img:hover {
+                     opacity: 100%;
+               }
+                         #carousel-thumbs4 img:hover {
+                              opacity: 100%;
+                      }
+
+  #carousel-thumbs img {
+      opacity: 80%;
+      border: 3px solid transparent;
+      cursor: pointer;
+  }
+
+        #carousel-thumbs2 img {
+             opacity: 80%;
+             border: 3px solid transparent;
+             cursor: pointer;
+         }
+
+                 #carousel-thumbs3 img {
+                      opacity: 80%;
+                      border: 3px solid transparent;
+                        cursor: pointer;
+                
+                }
+                        #carousel-thumbs4 img {
+                              opacity: 80%;
+                              border: 3px solid transparent;
+                              cursor: pointer;
+                 }
+
+  #carousel-thumbs .selected img {
+      opacity: 100%;
+  } 
+  
+        #carousel-thumbs2 .selected img {
+             opacity: 100%;
+         }
+              #carousel-thumbs3 .selected img {
+                     opacity: 100%;
+              }
+                         #carousel-thumbs4 .selected img {
+                             opacity: 100%;
+                         }
+  
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+      width: 50px;
+  }
+  
+  .carousel-fullscreen-icon {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 1.75rem;
+      height: 1.75rem;
+      z-index: 4;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(255,255,255,.80)'  viewBox='0 0 16 16'%3E%3Cpath d='M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z' /%3E%3C/svg%3E");
+  }
+  
+  .carousel-fullscreen-icon:hover {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(255,255,255)' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z' /%3E%3C/svg%3E");
+  }
+  
+  .pause .carousel-pause-icon {
+      position: absolute;
+      top: 3.75rem;
+      left: 1rem;
+      width: 1.75rem;
+      height: 1.75rem;
+      z-index: 4;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(255,255,255,.80)'  viewBox='0 0 16 16'%3E%3Cpath d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5zm3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5z' /%3E%3C/svg%3E");
+  }
+  .pause .carousel-pause-icon:hover {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(255,255,255)'  viewBox='0 0 16 16'%3E%3Cpath d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5zm3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5z' /%3E%3C/svg%3E");
+  }
+  
+  .play .carousel-pause-icon {
+      position: absolute;
+      top: 3.75rem;
+      left: 1rem;
+      width: 1.75rem;
+      height: 1.75rem;
+      z-index: 4;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(255,255,255,.80)'  viewBox='0 0 16 16'%3E%3Cpath d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z' /%3E%3C/svg%3E");
+  }
+  
+  .play .carousel-pause-icon:hover {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(255,255,255)'  viewBox='0 0 16 16'%3E%3Cpath d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z' /%3E%3C/svg%3E");
+  }
+  
+  #carousel-thumbs .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(0,0,0,.60)' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  }
+  
+  #carousel-thumbs .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%60000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+  
+  .modal-content {
+      border-radius: 0;
+      background-color: transparent;
+      border: none;
+  }
+  #lightbox-container-image img {
+      width: auto;
+      max-height: 520px;
+  }
+  
+          </style>
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -198,7 +360,7 @@
                 <div id="home1" class="tab-pane fade" style="height: 280px;">
                     <div class="row" style="display: flex;">
                         <div class="col-xs-6 pull-left">
-                            <div id="myCarouselspecification" runat="server" class="carousel slide" data-ride="carousel">
+                           <!-- <div id="myCarouselspecification" runat="server" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-inner" role="listbox">
                                     <li class="item active">
                                         <img src="Ground-floor-ISO.png" class="img-responsive">
@@ -221,9 +383,111 @@
                                         <img src="Second-floor-ISO.png" class="img-responsive">
                                     </li>
                                 </ol>
+                            </div>-->
+                      <div style="width: 080%;">
+                            <div id="carousel" class="carousel slide gallery" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-slide-number="0" data-toggle="lightbox" data-gallery="gallery" data-remote="banner/slide.jpg">
+                                        <a href="contruction-view.html"><img src="banner/slider-1.jpg" class="d-block w-100" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="1" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p2.jpg">
+                                        <img src="images/p2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="2" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p3.jpg">
+                                        <img src="images/p3.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="3" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p4.jpg">
+                                        <img src="images/p4.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="4" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p5.jpg">
+                                        <img src="images/p5.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="5" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p5.jpg">
+                                        <img src="images/p5.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="6" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p5.jpg">
+                                        <img src="images/p5.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="7" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p5.jpg">
+                                        <img src="images/p5.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <a class="carousel-fullscreen" href="#carousel" role="button">
+                                    <span class="carousel-fullscreen-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Fullscreen</span>
+                                </a>
+                                <a class="carousel-pause pause" href="#carousel" role="button">
+                                    <span class="carousel-pause-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Pause</span>
+                                </a>
                             </div>
-
+            
+                            
+            
+                            <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-slide-number="0">
+                                        <div class="row mx-0">
+                                            <div id="carousel-selector-0" class="thumb col-3 px-1 py-2" data-target="#carousel" data-slide-to="0">
+                                                <img src="images/p1.png" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-1" class="thumb col-3 px-1 py-2" data-target="#carousel" data-slide-to="1">
+                                                <img src="images/p2.jpg" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-2" class="thumb col-3 px-1 py-2" data-target="#carousel" data-slide-to="2">
+                                                <img src="images/p1.png" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-3" class="thumb col-3 px-1 py-2" data-target="#carousel" data-slide-to="3">
+                                                <img src="images/p4.png" class="img-fluid" alt="...">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="1">
+                                        <div class="row mx-0">
+                                            <div id="carousel-selector-4" class="thumb col-3 px-1 py-2" data-target="#carousel" data-slide-to="4">
+                                                <img src="images/p5.png" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-5" class="thumb col-3 px-1 py-2" data-target="#carousel" data-slide-to="5">
+                                                <img src="images/p5.png" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-6" class="thumb col-3 px-1 py-2" data-target="#carousel" data-slide-to="6">
+                                                <img src="images/p5.png" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-7" class="thumb col-3 px-1 py-2" data-target="#carousel" data-slide-to="7">
+                                                <img src="images/p5.png" class="img-fluid" alt="...">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
+                    </div>
+
+
+
+
+
+        
                         <div class="col-xs-7 pull-left ScrollStyle">
                             <div class="col-xs-6">
                                 <h3>Type of Flats</h3>
@@ -367,7 +631,7 @@
                 <div id="home3" class="tab-pane fade" style="height: 280px;">
                     <div class="row">
                     <div class="col-xs-6 col-sm-offset-3 pull-left">
-                        <div id="myCarousel" runat="server" class="carousel slide" data-ride="carousel">
+                        <!--<div id="myCarousel" runat="server" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-inner" role="listbox">
                                 <li class="item active">
                                     <img src="Ground-floor-ISO.png" class="img-responsive">
@@ -390,105 +654,303 @@
                                     <img src="Second-floor-ISO.png" class="img-responsive">
                                 </li>
                             </ol>
+                        </div>-->
+
+
+                        <div style="width: 80%;">
+                            <div id="carousel2" class="carousel slide gallery" data-ride="carousel2">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-slide-number="0" data-toggle="lightbox" data-gallery="gallery" data-remote="Floor Plans/Anand Residence/First floor ISO.jpg">
+                                        <a href="contruction-view.html"><img src="Floor Plans/Anand Residence/First floor ISO.jpg" class="d-block w-100" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="1" data-toggle="lightbox" data-gallery="gallery" data-remote="Floor Plans/Anand Residence/Ground floor ISO.jpg">
+                                        <img src="Floor Plans/Anand Residence/Ground floor ISO.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="2" data-toggle="lightbox" data-gallery="gallery" data-remote="Floor Plans/Anand Residence/Second floor ISO.jpg">
+                                        <img src="Second-floor-ISO.png" class="d-block w-100" alt="...">
+                                    </div>
+                                  
+                                    
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <a class="carousel-fullscreen" href="#carousel2" role="button">
+                                    <span class="carousel-fullscreen-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Fullscreen</span>
+                                </a>
+                                <a class="carousel-pause pause" href="#carousel2" role="button">
+                                    <span class="carousel-pause-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Pause</span>
+                                </a>
+                            </div>
+            
+                            
+            
+                            <div id="carousel-thumbs2" class="carousel slide" data-ride="carousel2">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-slide-number="0">
+                                        <div class="row mx-0">
+                                            <div id="carousel-selector-0" class="thumb col-3 px-1 py-2" data-target="#carousel2" data-slide-to="0">
+                                                <img src="Floor Plans/Anand Residence/First floor ISO.jpg" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-1" class="thumb col-3 px-1 py-2" data-target="#carousel2" data-slide-to="1">
+                                                <img src="Floor Plans/Anand Residence/Ground floor ISO.jpg" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-2" class="thumb col-3 px-1 py-2" data-target="#carousel2" data-slide-to="2">
+                                                <img src="Floor Plans/Anand Residence/Second floor ISO.jpg" class="img-fluid" alt="...">
+                                            </div>
+                                                                                        
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel-thumbs2" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-thumbs2" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
+                    
+
+
+
                     </div>
                 </div>
                 </div>
  
                 <div id="home4" class="tab-pane fade" style="height: 280px;">
+                    <div class="row">
                     <div class="col-xs-6 col-sm-offset-3 pull-left">
-                        <div id="myCarouselmodel" runat="server" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-inner" role="listbox">
-                                <li class="item active">
-                                    <img src="images/Anand_Interior_(1).jpg" class="img-responsive">
-                                </li>
-                                <li class="item">
-                                    <img src="images/Anand_Interior_(2).jpeg" class="img-responsive">
-                                </li>
-                                <li class="item">
-                                    <img src="images/Anand_Interior_(3).jpeg" class="img-responsive">
-                                </li>
-                                <li class="item">
-                                    <img src="images/Anand_Interior_(4).jpeg" class="img-responsive">
-                                </li>
-                                <li class="item">
-                                    <img src="images/Anand_Interior_(5).jpeg" class="img-responsive">
-                                </li>
-                                <li class="item">
-                                    <img src="images/Anand_Interior_(6).jpeg" class="img-responsive">
-                                </li>
-                                <li class="item">
-                                    <img src="images/Anand_Interior_(7).jpeg" class="img-responsive">
-                                </li>
-                                <li class="item">
-                                    <img src="images/Anand_Interior_(8).jpeg" class="img-responsive">
-                                </li>
-                                <li class="item">
-                                    <img src="images/Anand_Interior_(9).jpeg" class="img-responsive">
-                                </li>
-                               
-                            </ol>
-                            <ol class="carousel-indicators">
-                                <li data-target="#myCarouselmodel" data-slide-to="0" class="active">
-                                    <img src="images/Anand_Interior_(1).jpg" class="img-responsive">
-                                </li>
-                                <li data-target="#myCarouselmodel" data-slide-to="1">
-                                    <img src="images/Anand_Interior_(2).jpeg" class="img-responsive">
-                                </li>
-                                 <li data-target="#myCarouselmodel" data-slide-to="2">
-                                    <img src="images/Anand_Interior_(3).jpeg" class="img-responsive">
-                                </li>
-                                <li data-target="#myCarouselmodel" data-slide-to="3">
-                                    <img src="images/Anand_Interior_(4).jpeg" class="img-responsive">
-                                </li>
-                                <li data-target="#myCarouselmodel" data-slide-to="4">
-                                    <img src="images/Anand_Interior_(5).jpeg" class="img-responsive">
-                                </li>
-                                <li data-target="#myCarouselmodel" data-slide-to="5">
-                                    <img src="images/Anand_Interior_(6).jpeg" class="img-responsive">
-                                </li>
-                                <li data-target="#myCarouselmodel" data-slide-to="6">
-                                    <img src="images/Anand_Interior_(7).jpeg" class="img-responsive">
-                                </li>
-                                <li data-target="#myCarouselmodel" data-slide-to="7">
-                                    <img src="images/Anand_Interior_(8).jpeg" class="img-responsive">
-                                </li>
-                                <li data-target="#myCarouselmodel" data-slide-to="8">
-                                    <img src="images/Anand_Interior_(9).jpeg" class="img-responsive">
-                                </li>
-                            </ol>
+                        
+                        <div style="width: 80%;">
+                            <div id="carousel3" class="carousel slide gallery" data-ride="carousel3">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-slide-number="0" data-toggle="lightbox" data-gallery="gallery" data-remote="Model Flats/Anand Residence/Image (1).jpeg">
+                                        <a href="contruction-view.html"><img src="Model Flats/Anand Residence/Image (1).jpeg" class="d-block w-100" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="1" data-toggle="lightbox" data-gallery="gallery" data-remote="Model Flats/Anand Residence/Image (2).jpeg">
+                                        <img src="Model Flats/Anand Residence/Image (2).jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="2" data-toggle="lightbox" data-gallery="gallery" data-remote="Model Flats/Anand Residence/Image (3).jpeg">
+                                        <img src="Model Flats/Anand Residence/Image (3).jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="3" data-toggle="lightbox" data-gallery="gallery" data-remote="Model Flats/Anand Residence/Image (4).jpeg">
+                                        <img src="Model Flats/Anand Residence/Image (4).jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="4" data-toggle="lightbox" data-gallery="gallery" data-remote="Model Flats/Anand Residence/Image (5).jpeg">
+                                        <img src="Model Flats/Anand Residence/Image (5).jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="5" data-toggle="lightbox" data-gallery="gallery" data-remote="Model Flats/Anand Residence/Image (6).jpeg">
+                                        <img src="Model Flats/Anand Residence/Image (6).jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="6" data-toggle="lightbox" data-gallery="gallery" data-remote="Model Flats/Anand Residence/Image (7).jpeg">
+                                        <img src="Model Flats/Anand Residence/Image (7).jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="7" data-toggle="lightbox" data-gallery="gallery" data-remote="Model Flats/Anand Residence/Image (8).jpeg">
+                                        <img src="Model Flats/Anand Residence/Image (8).jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <a class="carousel-fullscreen" href="#carousel3" role="button">
+                                    <span class="carousel-fullscreen-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Fullscreen</span>
+                                </a>
+                                <a class="carousel-pause pause" href="#carousel3" role="button">
+                                    <span class="carousel-pause-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Pause</span>
+                                </a>
+                            </div>
+            
+                            
+            
+                            <div id="carousel-thumbs3" class="carousel slide" data-ride="carousel3">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-slide-number="0">
+                                        <div class="row mx-0">
+                                            <div id="carousel-selector-0" class="thumb col-3 px-1 py-2" data-target="#carousel3" data-slide-to="0">
+                                                <img src="Model Flats/Anand Residence/Image (1).jpeg" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-1" class="thumb col-3 px-1 py-2" data-target="#carousel3" data-slide-to="1">
+                                                <img src="Model Flats/Anand Residence/Image (2).jpeg" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-2" class="thumb col-3 px-1 py-2" data-target="#carousel3" data-slide-to="2">
+                                                <img src="Model Flats/Anand Residence/Image (3).jpeg" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-3" class="thumb col-3 px-1 py-2" data-target="#carousel3" data-slide-to="3">
+                                                <img src="Model Flats/Anand Residence/Image (4).jpeg" class="img-fluid" alt="...">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="1">
+                                        <div class="row mx-0">
+                                            <div id="carousel-selector-4" class="thumb col-3 px-1 py-2" data-target="#carousel3" data-slide-to="4">
+                                                <img src="Model Flats/Anand Residence/Image (5).jpeg" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-5" class="thumb col-3 px-1 py-2" data-target="#carousel3" data-slide-to="5">
+                                                <img src="Model Flats/Anand Residence/Image (6).jpeg" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-6" class="thumb col-3 px-1 py-2" data-target="#carousel3" data-slide-to="6">
+                                                <img src="Model Flats/Anand Residence/Image (7).jpeg" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-7" class="thumb col-3 px-1 py-2" data-target="#carousel3" data-slide-to="7">
+                                                <img src="Model Flats/Anand Residence/Image (8).jpeg" class="img-fluid" alt="...">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel-thumbs3" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-thumbs3" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
+
+
+
+                    
                     </div>
+                </div>
                 </div>
               
                 <div id="home5" class="tab-pane fade" style="height: 280px;">
+                    <div class="row">
                     <div class="col-xs-6 col-sm-offset-3 pull-left">
-                        <div id="myCarouselstatus" runat="server" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-inner" role="listbox">
-                                <li class="item active">
-                                    <img src="images/Exterior_view_01.jpg" class="img-responsive">
-                                </li>
-                                <li class="item">
-                                    <img src="First-floor-ISO.png" class="img-responsive">
-                                </li>
-                                <li class="item">
-                                    <img src="Second-floor-ISO.png" class="img-responsive">
-                                </li>
-                            </ol>
-                            <ol class="carousel-indicators">
-                                <li data-target="#myCarouselstatus" data-slide-to="0" class="active">
-                                    <img src="images/Exterior_view_01.jpg" class="img-responsive">
-                                </li>
-                                <li data-target="#myCarouselstatus" data-slide-to="1">
-                                    <img src="First-floor-ISO.png" class="img-responsive">
-                                </li>
-                                <li data-target="#myCarouselstatus" data-slide-to="2">
-                                    <img src="Second-floor-ISO.png" class="img-responsive">
-                                </li>
-                            </ol>
+                        
+
+                        <div style="width: 080%;">
+                            <div id="carousel4" class="carousel slide gallery" data-ride="carousel4">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-slide-number="0" data-toggle="lightbox" data-gallery="gallery" data-remote="banner/slide.jpg">
+                                        <a href="contruction-view.html"><img src="banner/slider-1.jpg" class="d-block w-100" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="1" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p2.jpg">
+                                        <img src="images/p2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="2" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p3.jpg">
+                                        <img src="images/p3.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="3" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p4.jpg">
+                                        <img src="images/p4.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="4" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p5.jpg">
+                                        <img src="images/p5.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="5" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p5.jpg">
+                                        <img src="images/p5.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="6" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p5.jpg">
+                                        <img src="images/p5.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="7" data-toggle="lightbox" data-gallery="gallery" data-remote="images/p5.jpg">
+                                        <img src="images/p5.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel4" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel4" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <a class="carousel-fullscreen" href="#carousel4" role="button">
+                                    <span class="carousel-fullscreen-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Fullscreen</span>
+                                </a>
+                                <a class="carousel-pause pause" href="#carousel4" role="button">
+                                    <span class="carousel-pause-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Pause</span>
+                                </a>
+                            </div>
+                        
+                            
+                        
+                            <div id="carousel-thumbs4" class="carousel slide" data-ride="carousel4">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-slide-number="0">
+                                        <div class="row mx-0">
+                                            <div id="carousel-selector-0" class="thumb col-3 px-1 py-2" data-target="#carousel4" data-slide-to="0">
+                                                <img src="images/p1.png" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-1" class="thumb col-3 px-1 py-2" data-target="#carousel4" data-slide-to="1">
+                                                <img src="images/p2.jpg" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-2" class="thumb col-3 px-1 py-2" data-target="#carousel4" data-slide-to="2">
+                                                <img src="images/p1.png" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-3" class="thumb col-3 px-1 py-2" data-target="#carousel4" data-slide-to="3">
+                                                <img src="images/p4.png" class="img-fluid" alt="...">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-slide-number="1">
+                                        <div class="row mx-0">
+                                            <div id="carousel-selector-4" class="thumb col-3 px-1 py-2" data-target="#carousel4" data-slide-to="4">
+                                                <img src="images/p5.png" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-5" class="thumb col-3 px-1 py-2" data-target="#carousel4" data-slide-to="5">
+                                                <img src="images/p5.png" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-6" class="thumb col-3 px-1 py-2" data-target="#carousel4" data-slide-to="6">
+                                                <img src="images/p5.png" class="img-fluid" alt="...">
+                                            </div>
+                                            <div id="carousel-selector-7" class="thumb col-3 px-1 py-2" data-target="#carousel4" data-slide-to="7">
+                                                <img src="images/p5.png" class="img-fluid" alt="...">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel-thumbs4" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-thumbs4" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
+
+
+
                     </div>
                 </div>
+                </div>
+
+
+
+
+                
                 <div id="home6" class="tab-pane fade" style="height: 280px;">
 
                     <iframe src=
@@ -642,6 +1104,7 @@
     </footer>
     <div class="clearfix"></div>
     <script type="text/javascript">
+
         $(document).ready(function () {
             $(".dropdown").hover(function () {
                 var dropdownMenu =
@@ -674,5 +1137,118 @@
                 });
         });
     </script>
+
+     <script>
+
+        $("[id^=carousel-thumbs]").carousel({
+            interval: false
+        });
+             $("[id^=carousel-thumbs2]").carousel({
+                  interval: false
+               });
+
+                    $("[id^=carousel-thumbs3]").carousel({
+                    interval: false
+                });
+                                $("[id^=carousel-thumbs4]").carousel({
+                            interval: false
+                        });
+
+
+        /** Pause/Play Button **/
+        $(".carousel-pause").click(function () {
+            var id = $(this).attr("href");
+            if ($(this).hasClass("pause")) {
+                $(this).removeClass("pause").toggleClass("play");
+                $(this).children(".sr-only").text("Play");
+                $(id).carousel("pause");
+            } else {
+                $(this).removeClass("play").toggleClass("pause");
+                $(this).children(".sr-only").text("Pause");
+                $(id).carousel("cycle");
+            }
+            $(id).carousel;
+        });
+        
+        /** Fullscreen Buttun **/
+        $(".carousel-fullscreen").click(function () {
+            var id = $(this).attr("href");
+            $(id).find(".active").ekkoLightbox({
+                type: "image"
+            });
+        });
+        
+        if ($("[id^=carousel-thumbs] .carousel-item").length < 2) {
+            $("#carousel-thumbs [class^=carousel-control-]").remove();
+            $("#carousel-thumbs").css("padding", "0 5px");
+        }
+
+                if ($("[id^=carousel-thumbs2] .carousel-item").length < 2) {
+                    $("#carousel-thumbs2 [class^=carousel-control-]").remove();
+                    $("#carousel-thumbs2").css("padding", "0 5px");
+                }
+
+                                if ($("[id^=carousel-thumbs3] .carousel-item").length < 2) {
+                            $("#carousel-thumbs3 [class^=carousel-control-]").remove();
+                            $("#carousel-thumbs3").css("padding", "0 5px");
+                        }
+                        
+                                if ($("[id^=carousel-thumbs4] .carousel-item").length < 2) {
+                                    $("#carousel-thumbs4 [class^=carousel-control-]").remove();
+                                    $("#carousel-thumbs4").css("padding", "0 5px");
+                                }   
+        
+        $("#carousel").on("slide.bs.carousel", function (e) {
+            var id = parseInt($(e.relatedTarget).attr("data-slide-number"));
+            var thumbNum = parseInt(
+                $("[id=carousel-selector-" + id + "]")
+                    .parent()
+                    .parent()
+                    .attr("data-slide-number")
+            );
+            $("[id^=carousel-selector-]").removeClass("selected");
+            $("[id=carousel-selector-" + id + "]").addClass("selected");
+            $("#carousel-thumbs").carousel(thumbNum);
+        });
+        
+                $("#carousel2").on("slide.bs.carousel", function (e) {
+                    var id = parseInt($(e.relatedTarget).attr("data-slide-number"));
+                    var thumbNum = parseInt(
+                        $("[id=carousel-selector-" + id + "]")
+                            .parent()
+                            .parent()
+                            .attr("data-slide-number")
+                    );
+                    $("[id^=carousel-selector-]").removeClass("selected");
+                    $("[id=carousel-selector-" + id + "]").addClass("selected");
+                    $("#carousel-thumbs2").carousel(thumbNum);
+                });
+
+                        $("#carousel3").on("slide.bs.carousel", function (e) {
+                    var id = parseInt($(e.relatedTarget).attr("data-slide-number"));
+                    var thumbNum = parseInt(
+                        $("[id=carousel-selector-" + id + "]")
+                            .parent()
+                            .parent()
+                            .attr("data-slide-number")
+                    );
+                    $("[id^=carousel-selector-]").removeClass("selected");
+                    $("[id=carousel-selector-" + id + "]").addClass("selected");
+                    $("#carousel-thumbs3").carousel(thumbNum);
+                });
+
+                        $("#carousel4").on("slide.bs.carousel", function (e) {
+                    var id = parseInt($(e.relatedTarget).attr("data-slide-number"));
+                    var thumbNum = parseInt(
+                        $("[id=carousel-selector-" + id + "]")
+                            .parent()
+                            .parent()
+                            .attr("data-slide-number")
+                    );
+                    $("[id^=carousel-selector-]").removeClass("selected");
+                    $("[id=carousel-selector-" + id + "]").addClass("selected");
+                    $("#carousel-thumbs4").carousel(thumbNum);
+                });
+  </script>
 </body>
 </html>
